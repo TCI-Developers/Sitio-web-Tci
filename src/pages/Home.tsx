@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar';
-import MainContent from '../components/mainContent.tsx';
 import Footer from '../components/Footer.tsx';
+import MainContent from '../components/MainContent.tsx';
 
 const Home = () => {
   return (

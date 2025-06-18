@@ -1,4 +1,3 @@
-import React from 'react'
 import SystemsCard from './SystemsCard'
 
 const Systems = () => {

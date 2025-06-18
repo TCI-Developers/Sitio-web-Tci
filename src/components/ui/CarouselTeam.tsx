@@ -16,16 +16,10 @@ const teamData: TeamMember[] = [
     image: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
   },
   {
-    name: 'GERARDO JESUS MARTINEZ ELIAS',
-    role: 'GERENTE EMPAQUES',
-    description: 'Es el pilar de tci, tambien el mas guapo de la empresa.',
-    image: '/Gera.jpeg',
-  },
-  {
-    name: 'JULIO RAMÍREZ',
+    name: 'TEST TEST',
     role: 'CTO',
     description: 'Lidera la innovación tecnológica en cada paso.',
-    image: 'https://images.unsplash.com/photo-1603415526960-f8f0a826ef5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
+    image: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
   },
 ];
 

@@ -7,7 +7,7 @@ import Blog from './ui/Blog';
 
 
 
-const mainContent = () => {
+const MainContent = () => {
   return (
     <main className='mt-20 text-text w-full' style={{letterSpacing:'-0.099em'}}>
       <Hero />
@@ -22,4 +22,4 @@ const mainContent = () => {
   )
 }
 
-export default mainContent
+export default MainContent
