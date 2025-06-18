@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    --color-primary: #00c0f4;       /* Azul claro*/
+    --color-secondary: #0f245f;     /* Azul obscuro */
+    --color-accent: #464746;        /* Cafe */
+    --color-text: #f4f4f7;          /* blanco */
+  }
+
+  body {
+    margin: 0;
+
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+/* === Fuentes Bebas Neue === */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/Bebas_Neue/BebasNeue-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/Bebas_Neue/BebasNeue-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+  
+  /* === Fuentes Wix Madefor Display === */
+  @font-face {
+    font-family: 'Wix Madefor';
+    src: url('./assets/fonts/Wix_MadeforDisplay/Wix_MadeforDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Wix Madefor';
+    src: url('./assets/fonts/Wix_MadeforDisplay/Wix_MadeforDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  /* === Clases personalizadas === */
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .font-wix {
+    font-family: 'Wix Madefor', sans-serif;
+  }
+  
+  @layer utilities {
+    .bg-primary {
+      background-color: var(--color-primary);
+    }
+  
+    .bg-secondary {
+      background-color: var(--color-secondary);
+    }
+  
+    .bg-accent {
+      background-color: var(--color-accent);
+    }
+
+    .bg-white-text {
+      background-color: var(--color-text);
+    }
+  
+  
+    .text-primary {
+      color: var(--color-primary);
+    }
+  
+    .text-secondary {
+      color: var(--color-secondary);
+    }
+  
+    .text-accent {
+      color: var(--color-accent);
+    }
+  
+    .text-text {
+      color: var(--color-text);
+    }
+  }
+  
