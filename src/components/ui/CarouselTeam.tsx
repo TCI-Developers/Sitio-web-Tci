@@ -99,7 +99,7 @@ const TeamCarousel: React.FC = () => {
                 <h3 className="font-bold text-[27px] md:text-xl uppercase font-bebas">
                   {member.name}
                 </h3>
-                <div>
+                <div className='font-wix'>
                     <div className="flex justify-between items-center">
                     <h4 className="text-3xl md:text-lg font-bold text-secondary">
                         {member.role}

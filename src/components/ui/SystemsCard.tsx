@@ -7,7 +7,7 @@ interface Propiedades {
   
 const SystemsCard = ({titulo,descripcion,fondo}:Propiedades) => {
   return (
-    <div className={`flex flex-col justify-end pl-4 pb-8 pr-2 rounded-2xl min-h-[210px] max-w-[400px] md:min-h-[300px] md:max-w-[300px] leading-none relative`}
+    <div className={`flex flex-col justify-end pl-4 pb-8 pr-2 rounded-2xl min-h-[210px] max-w-[400px] md:min-h-[300px] md:max-w-[320px] leading-none relative`}
     style={{
       backgroundImage: `linear-gradient(to top, rgba(0, 192, 244, 0.7), #fff0), url(${fondo})`,
       backgroundSize:'cover',

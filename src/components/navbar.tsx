@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             </button>
 
             {/* Navegación escritorio */}
-            <nav className="hidden md:flex space-x-6 text-text max-w-4/5 ">
+            <nav className="hidden md:flex space-x-6 text-text max-w-4/5 font-wix">
               <Link to="/" className=" hover:text-blue-600">Inicio</Link>
               <Link to="/Servicios" className="hover:text-blue-600">Servicios</Link>
               <Link to="/NuestrosClientes" className=" hover:text-blue-600">Nuestros Clientes</Link>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
 
       {/* Menú móvil desplegable */}
       {isOpen && (
-        <nav className="md:hidden text-white bg-primary px-4 pb-4">
+        <nav className="md:hidden text-white bg-primary px-4 pb-4 font-wix">
           <Link
             to="/"
             onClick={closeMenu}
