@@ -100,11 +100,11 @@ const TeamCarousel: React.FC = () => {
                   {member.name}
                 </h3>
                 <div className='font-wix'>
-                    <div className="flex justify-between items-center">
-                    <h4 className="text-3xl md:text-lg font-bold text-secondary">
-                        {member.role}
-                    </h4>
-                    <FaLinkedin size={24} className="text-white" />
+                    <div className="flex justify-between items-center pr-2">
+                      <h4 className="text-3xl md:text-lg font-bold text-secondary">
+                          {member.role}
+                      </h4>
+                      <FaLinkedin size={24} className="text-white" />
                     </div>
                     <p className="text-lg md:text-sm text-white/80 tracking-normal">
                     {member.description}

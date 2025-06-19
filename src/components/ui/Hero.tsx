@@ -7,9 +7,9 @@ const Hero = () => {
             <div className='flex flex-col gap-8 w-full'>
               <div className='flex flex-col font-semibold font-bebas md:items-start lg:items-start'>
                 <div className='p-0'>
-                  <h2 className='flex flex-col text-2xl whitespace-nowrap leading-none md:text-sm lg:text-xl'>
+                  <h2 className='flex flex-col text-2xl whitespace-nowrap md:whitespace-normal leading-none md:text-sm lg:text-xl tracking-tight'>
                     INNOVANDO SISTEMAS PARA MARCAR LA DIFERENCIA
-                    <span className='text-[38px] md:text-[22px] lg:text-[32px] whitespace-nowrap'>Y BRINDAR MEJORES SERVICIOS</span>
+                    <span className='text-[38px] md:text-[22px] lg:text-[32px] whitespace-nowrap md:whitespace-normal'>Y BRINDAR MEJORES SERVICIOS</span>
                   </h2>
                   
                 </div>    
