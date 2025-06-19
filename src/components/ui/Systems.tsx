@@ -30,7 +30,7 @@ const Systems = () => {
                     </p>
                   </div>
                   <img 
-                    src="/COMUNICACION-REMOTA-A.svg" 
+                    src="/COMUNICACION-REMOTA.svg" 
                     alt="Comunicacion Remota" 
                     className="absolute bottom-0 left-0 w-full h-auto z-0"
                   />

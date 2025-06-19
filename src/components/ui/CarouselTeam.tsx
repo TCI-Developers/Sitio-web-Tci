@@ -13,13 +13,13 @@ const teamData: TeamMember[] = [
     name: 'ARMANDO ORTIZ DE MONTELLANO ARÉVALO',
     role: 'CEO',
     description: 'Toda la información de su negocio desde cualquier dispositivo.',
-    image: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
+    image: '/IMAGEN-CEO.svg',
   },
   {
-    name: 'TEST TEST',
-    role: 'CTO',
-    description: 'Lidera la innovación tecnológica en cada paso.',
-    image: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
+    name: 'ARMANDO ORTIZ DE MONTELLANO MURGIA',
+    role: 'CIEO',
+    description: 'Toda la información de su negocio desde cualquier dispositivo.',
+    image: '/IMAGEN-CIEO.svg',
   },
 ];
 
@@ -55,7 +55,7 @@ const TeamCarousel: React.FC = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden relative">
+    <div className="w-full overflow-hidden relative lg:max-w-[80%] xl:max-w-[60%]">
       {/* Flecha izquierda */}
       {currentIndex > 0 && (
         <button
@@ -92,7 +92,7 @@ const TeamCarousel: React.FC = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="h-[400px] md:h-64 w-full object-cover m-auto"
+                  className="h-[400px] md:h-64 w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-4 pt-4 pb-6">

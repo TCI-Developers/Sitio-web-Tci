@@ -10,7 +10,7 @@ const ManagmentTeam = () => {
         <p>Nuestro quipo directivo no solo lidera la estrategia de innovación, también escucha, acompaña y se involucra en cada etapa del proceso para que <span className='text-primary'>cada cliente reciba una solución hecha a la medida.</span></p>
         <p className='text-primary'>Trabajamos hombro a hombro contigo para que  la tecnología impulse lo que realmente importa: tus resultados y tu tranquilidad.</p>
       </div>
-      <div className="max-w-4xl md:flex-1 mx-auto py-10">
+      <div className="max-w-4xl md:flex-1 mx-auto py-10 flex justify-center">
         <TeamCarousel />
       </div>
     </section>
