@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <div className="max-w-full mx-auto px-12 py-3 flex justify-between items-center">
           
           <Link to="/" className="text-xl font-bold hover:scale-105">
-            <img src="/LOGO-TCI.svg" className="h-12" />
+            <img src="./LOGO-TCI.svg" className="h-12" />
           </Link>
 
           <div className="flex items-center gap-10 md:gap-4 md:flex-row-reverse">
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
                 <Link to="/" className="hover:text-blue-500">Inicio</Link>
                 <Link to="/Servicios" className="hover:text-blue-500">Servicios</Link>
                 <Link to="/NuestrosClientes" className="hover:text-blue-500">Nuestros Clientes</Link>
-                <Link to="/AcercadeNosotros" className="hover:text-blue-500">Acerca de Nosotros</Link>
+                <Link to="/about" className="hover:text-blue-500">Acerca de Nosotros</Link>
                 <Link to="/AccesoClientes" className="hover:text-blue-500">Acceso Clientes</Link>
               </nav>
             </div>
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Menú móvil con clase dinámica */}
-        <div className={`mobile-menu md:hidden bg-primary text-white  font-wix mt-2 ${isOpen ? 'open' : ''}`}>
+        <div className={`mobile-menu md:hidden bg-primary text-white font-wix mt-2 ${isOpen ? 'open' : ''}`}>
           <Link to="/" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Inicio</Link>
           <Link to="/Servicios" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Servicios</Link>
           <Link to="/NuestrosClientes" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Nuestros Clientes</Link>

@@ -18,7 +18,7 @@ const Blog = () => {
                             En el mundo empresarial actual, la transformación digital ya no es una 
                             alternativa: es un requisito para mantenerse competitivo.
                             Las empresas que adoptan tecnologías."
-                        fondo="/IMAGEN-TEMA-BLOG-1.png"
+                        fondo="./IMAGEN-TEMA-BLOG-1.png"
                         />
                     </div>
                     <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
@@ -29,7 +29,7 @@ const Blog = () => {
                                     alternativa: es un requisito para mantenerse competitivo.
                                     Las empresas que adoptan tecnologias.
                                 "
-                                fondo="/IMAGEN-TEMA-BLOG-2.png"
+                                fondo="./IMAGEN-TEMA-BLOG-2.png"
                         />
                     </div>
                     <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
@@ -40,7 +40,7 @@ const Blog = () => {
                                     alternativa: es un requisito para mantenerse competitivo.
                                     Las empresas que adoptan tecnologias.
                                 "
-                                fondo="/IMAGEN-TEMA-BLOG-3.png"
+                                fondo="./IMAGEN-TEMA-BLOG-3.png"
                         />
                     </div>
                 </div>
@@ -50,39 +50,5 @@ const Blog = () => {
     </section>
   )
 }
-{/* <div className="bg-[#0a3a63] rounded-3xl grid gap-4 md:grid-cols-8 md:grid-rows-6 px-8 py-10">
-                <div className="md:row-span-6 md:col-span-5">
-                    <BlogCard 
-                        titulo="TRANSFORMACIÓN DIGITAL Y AUTOMÁTIZACIÓN" 
-                        descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                            En el mundo empresarial actual, la transformación digital ya no es una 
-                            alternativa: es un requisito para mantenerse competitivo.
-                            Las empresas que adoptan tecnologias.
-                        "
-                        fondo="/IMAGEN-TEMA-BLOG-1.png"
-                    />
-                </div>
-                <div className="md:row-span-3 md:col-span-3">
-                    <BlogCard 
-                        titulo="AUTOMATIZAR PROCESOS BENEFICIOS CONCRETOS PARA PEQUEÑAS Y MEDIANAS EMPRESAS" 
-                        descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                            En el mundo empresarial actual, la transformación digital ya no es una 
-                            alternativa: es un requisito para mantenerse competitivo.
-                            Las empresas que adoptan tecnologias.
-                        "
-                        fondo="/IMAGEN-TEMA-BLOG-2.png"
-                    />
-                </div>
-                <div className="md:row-span-3 md:col-span-3">
-                    <BlogCard 
-                        titulo="DE EXCEL A ERP CUANDO Y PORQUE DAR EL SIGUIEMTE PASO" 
-                        descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                            En el mundo empresarial actual, la transformación digital ya no es una 
-                            alternativa: es un requisito para mantenerse competitivo.
-                            Las empresas que adoptan tecnologias.
-                        "
-                        fondo="/IMAGEN-TEMA-BLOG-3.png"
-                    />
-                </div>
-            </div> */}
+
 export default Blog

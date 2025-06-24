@@ -7,9 +7,9 @@ const Systems = () => {
         <h3 className='text-4xl text-center'>Nuestros <span className='font-semibold text-primary'>sistemas operativos</span> con tus <span className='font-semibold text-primary'>necesidades</span></h3>
         <p className='text-center text-2xl mt-2 w-4/5'>Un <span className='font-semibold text-primary'>buen sistema</span> aumenta el <span className='font-semibold text-primary'>rendimiento y eficacia</span> de tus procesos.</p>
         <section className='flex flex-col items-center md:flex-row md:justify-center gap-6 md:gap-4 mt-4'>
-            <SystemsCard titulo='HERRAMIENTAS RESPONSIVAS' descripcion='Toda la información de su negocio desde cualquier dispositivo' fondo='/IMAGEN-PROCESO-1-1.svg' />
-            <SystemsCard titulo='INNOVAR PROCESOS' descripcion='Soluciones en tecnología de la información especializadas en negocio' fondo='/IMAGEN-PROCESO-2.svg'/>
-            <SystemsCard titulo='CONSULTORÍA' descripcion='Asesorias en linea de nuestro personal capacitado para  hacer que su negocio de más' fondo='/IMAGEN-PROCESO-3.svg'/>     
+            <SystemsCard titulo='HERRAMIENTAS RESPONSIVAS' descripcion='Toda la información de su negocio desde cualquier dispositivo' fondo='./IMAGEN-PROCESO-1-1.svg' />
+            <SystemsCard titulo='INNOVAR PROCESOS' descripcion='Soluciones en tecnología de la información especializadas en negocio' fondo='./IMAGEN-PROCESO-2.svg'/>
+            <SystemsCard titulo='CONSULTORÍA' descripcion='Asesorias en linea de nuestro personal capacitado para  hacer que su negocio de más' fondo='./IMAGEN-PROCESO-3.svg'/>     
         </section>
         
       </section>
@@ -30,7 +30,7 @@ const Systems = () => {
                     </p>
                   </div>
                   <img 
-                    src="/COMUNICACION-REMOTA.svg" 
+                    src="./COMUNICACION-REMOTA.svg" 
                     alt="Comunicacion Remota" 
                     className="absolute bottom-0 left-0 w-full h-auto z-0"
                   />
@@ -39,7 +39,7 @@ const Systems = () => {
                 {/* 2 */}
                 <div className="bg-[#c1ebfc] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 relative overflow-hidden min-h-[400px]">
                   <div className="relative z-10">
-                    <img src="/CONECTADO-DE-EXTREMO-A-EXTREMO.svg" className="mb-4 w-full h-auto" alt="Extremo a extremo" />
+                    <img src="./CONECTADO-DE-EXTREMO-A-EXTREMO.svg" className="mb-4 w-full h-auto" alt="Extremo a extremo" />
                     <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
                       CONECTADO DE EXTREMO A EXTREMO
                     </h3>
@@ -52,7 +52,7 @@ const Systems = () => {
 
                 {/* 3 */}
                 <div className="bg-[#c1ebfc] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 flex flex-col justify-between">
-                  <img src="/PROJECT-MANAGEMENT.svg" className="mb-4 w-full h-auto" alt="Project Management" />
+                  <img src="./PROJECT-MANAGEMENT.svg" className="mb-4 w-full h-auto" alt="Project Management" />
                   <div>
                     <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
                       PROJECT MANAGEMENT
@@ -74,7 +74,7 @@ const Systems = () => {
                     </p>
                   </div>
                   <img 
-                    src="/CONTROL-EXACTITUD-CUMPLIMIENTO.svg" 
+                    src="./CONTROL-EXACTITUD-CUMPLIMIENTO.svg" 
                     alt="Control y Exactitud" 
                     className="absolute bottom-0 left-0 w-full h-auto z-0"
                   />

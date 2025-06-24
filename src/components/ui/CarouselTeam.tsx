@@ -13,13 +13,13 @@ const teamData: TeamMember[] = [
     name: 'ARMANDO ORTIZ DE MONTELLANO ARÉVALO',
     role: 'CEO',
     description: 'Toda la información de su negocio desde cualquier dispositivo.',
-    image: '/IMAGEN-CEO.svg',
+    image: './IMAGEN-CEO.svg',
   },
   {
     name: 'ARMANDO ORTIZ DE MONTELLANO MURGIA',
     role: 'CIEO',
     description: 'Toda la información de su negocio desde cualquier dispositivo.',
-    image: '/IMAGEN-CIEO.svg',
+    image: './IMAGEN-CIEO.svg',
   },
 ];
 

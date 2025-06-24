@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     path:"*",
     element: <Home />
   }
-]);
+],{basename:"/home"});
 
 export default function AppRouter() {
   return <RouterProvider router={router} />;

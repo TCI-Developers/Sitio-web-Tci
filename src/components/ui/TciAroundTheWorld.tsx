@@ -11,7 +11,7 @@ const TciAroundTheWorld = () => {
       </div>
 
       <div className="flex justify-center font-wix">
-        <img src="/MAPA-DE-PRESENCIA.gif" alt="MAPA-DE-PRESENCIA" className="w-full md:max-w-[80%] lg:max-w-[70%]" />
+        <img src="./MAPA-DE-PRESENCIA.gif" alt="MAPA-DE-PRESENCIA" className="w-full md:max-w-[80%] lg:max-w-[70%]" />
       </div>
       <div className="flex flex-col gap-8">
         <div>
@@ -20,16 +20,16 @@ const TciAroundTheWorld = () => {
 
         <div className="flex md:gap-16 px-12">
           <div>
-            <img src="/BOTON-EUA.png" alt="EUA" className="w-full max-w-[200px]" />
+            <img src="./BOTON-EUA.png" alt="EUA" className="w-full max-w-[200px]" />
           </div>   
           <div>
-            <img src="/BOTON-LATAM.png" alt="LATAM" className="w-full max-w-[200px]" />
+            <img src="./BOTON-LATAM.png" alt="LATAM" className="w-full max-w-[200px]" />
           </div>  
           <div>
-            <img src="/BOTON-EUROPA.png" alt="EUROPA" className="w-full max-w-[200px]" />
+            <img src="./BOTON-EUROPA.png" alt="EUROPA" className="w-full max-w-[200px]" />
           </div>  
           <div>
-            <img src="/BOTON-ASIA.png" alt="ASIA" className="w-full max-w-[200px]" />
+            <img src="./BOTON-ASIA.png" alt="ASIA" className="w-full max-w-[200px]" />
           </div>  
         </div>
 

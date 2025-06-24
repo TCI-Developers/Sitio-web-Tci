@@ -26,7 +26,7 @@ const Hero = () => {
 
           <section className='w-full mt-16 md:flex-1 md:w-1/2 md:my-8'>
             <div className='w-full md:h-full '>
-              <img className='w-full max-w-[700px]' src="/GRUPO-DASHBOARDS.svg" alt="GRUPO-DASHBOARDS" />
+              <img className='w-full max-w-[700px]' src="./GRUPO-DASHBOARDS.svg" alt="GRUPO-DASHBOARDS" />
             </div>
           </section>
           </section>
@@ -42,22 +42,22 @@ const Hero = () => {
 
           <section className="flex justify-center items-center gap-8 w-full mt-10 overflow-x-auto whitespace-nowrap pl-0 pr-2">
             <div className="flex-shrink-0">
-              <img src="/LOGO-SVG.svg"  alt="SV FRESH" className='w-[120px]' />
+              <img src="./LOGO-SVG.svg"  alt="SV FRESH" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="/LOGO-ZELESTRA.svg" alt="ZELESTRA" className='w-[120px]' />
+              <img src="./LOGO-ZELESTRA.svg" alt="ZELESTRA" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="/LOGO-AES.svg" alt="AES" className='w-[80px]' />
+              <img src="./LOGO-AES.svg" alt="AES" className='w-[80px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="/LOGO-FARMACIAS-SIMILARES.svg" alt="FARMACIAS SIMILARES" className='w-[120px]' />
+              <img src="./LOGO-FARMACIAS-SIMILARES.svg" alt="FARMACIAS SIMILARES" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="/LOGO-ARRENDAMEX.svg" alt="ARRENDAMEX" className='w-[100px]' />
+              <img src="./LOGO-ARRENDAMEX.svg" alt="ARRENDAMEX" className='w-[100px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="/LOGO-LA-BONANZA.svg" alt="LA BONANZA" className='w-[100px]' />
+              <img src="./LOGO-LA-BONANZA.svg" alt="LA BONANZA" className='w-[100px]' />
             </div>
 
         </section>

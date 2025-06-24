@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <section className='bg-gradient-to-r from-[#0f245f] to-[#00c0f4] min-h-36 lg:max-h-64 w-full p-12 lg:flex lg:items-center overflow-hidden'>
       <div className='flex lg:flex-auto justify-center lg:justify-start'>
-        <img src="/LOGO-TCI.svg" alt="LOGO EMPRESA" className='w-1/4 max-w-[200px]'/>
+        <img src="./LOGO-TCI.svg" alt="LOGO EMPRESA" className='w-1/4 max-w-[200px]'/>
       </div>
       <div className='flex lg:flex-1 flex-col gap-4 lg:flex-row md:justify-center '>
         <div className="flex flex-col lg:px-4 max-w-60 ">
