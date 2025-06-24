@@ -1,14 +1,43 @@
-import Navbar from '../components/navbar';
-import Footer from '../components/Footer.tsx';
-import MainContent from '../components/MainContent.tsx';
+import Hero from './home-ui/Hero.tsx';
+import Systems from './home-ui/Systems.tsx';
+import ManagmentTeam from './home-ui/ManagmentTeam.tsx';
+import TciAroundTheWorld from './home-ui/TciAroundTheWorld.tsx';
+import Blog from './home-ui/Blog.tsx';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          const yOffset = -80; 
+          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+          setTimeout(() => {
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }, 100); 
+        }
+      }
+    };
+
+    scrollToHash();
+  }, [location]);
+  
   return (
-    <div className='flex flex-col min-h-screen bg-gradient-to-r from-[#0f245f] to-[#00c0f4] m-0'>
-      <Navbar />
-      <MainContent />
-      <Footer />
-    </div>
+    <section className='mt-20 text-text w-full' style={{letterSpacing:'-0.099em'}}>
+      
+      <Hero />
+      <div className='backdrop-blur-[200px] rounded-[50px]'>
+        <Systems />
+        <ManagmentTeam />
+      </div>
+      <TciAroundTheWorld />
+      <Blog />
+    
+    </section>
   )
 }
 

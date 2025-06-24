@@ -2,7 +2,7 @@ import TeamCarousel from './CarouselTeam'
 
 const ManagmentTeam = () => {
   return (
-    <section className='flex flex-col gap-8 p-12 text-xl md:flex-row'>
+    <section id="nosotros" className='flex flex-col gap-8 p-12 text-xl md:flex-row'>
       <div className='flex flex-col md:flex-1  gap-6 font-wix py-10 '>
         <h3 className='text-3xl text-center font-bold text-primary md:text-left'> Nuestro equipo directivo</h3>
         <p>Personas <span className='text-primary'>comprometidas con tu crecimiento</span></p>

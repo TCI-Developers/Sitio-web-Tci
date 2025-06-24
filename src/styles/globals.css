@@ -17,6 +17,9 @@
     --color-accent: #464746;        /* Cafe */
     --color-text: #f4f4f7;          /* blanco */
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     margin: 0;

@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div>
+    <div className='mt-20 text-text w-full' style={{letterSpacing:'-0.099em'}}>
       Acerca de nosotros
     </div>
   )

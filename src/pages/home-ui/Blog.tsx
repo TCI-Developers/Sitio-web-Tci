@@ -18,7 +18,7 @@ const Blog = () => {
                             En el mundo empresarial actual, la transformación digital ya no es una 
                             alternativa: es un requisito para mantenerse competitivo.
                             Las empresas que adoptan tecnologías."
-                        fondo="./IMAGEN-TEMA-BLOG-1.png"
+                        fondo="/home/IMAGEN-TEMA-BLOG-1.png"
                         />
                     </div>
                     <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
@@ -29,7 +29,7 @@ const Blog = () => {
                                     alternativa: es un requisito para mantenerse competitivo.
                                     Las empresas que adoptan tecnologias.
                                 "
-                                fondo="./IMAGEN-TEMA-BLOG-2.png"
+                                fondo="/home/IMAGEN-TEMA-BLOG-2.png"
                         />
                     </div>
                     <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
@@ -40,7 +40,7 @@ const Blog = () => {
                                     alternativa: es un requisito para mantenerse competitivo.
                                     Las empresas que adoptan tecnologias.
                                 "
-                                fondo="./IMAGEN-TEMA-BLOG-3.png"
+                                fondo="/home/IMAGEN-TEMA-BLOG-3.png"
                         />
                     </div>
                 </div>

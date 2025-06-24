@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <>
-        <section className='px-10 py-12 md:flex md:justify-center md:py-0' >
+        <section id="inicio" className='px-10 py-12 md:flex md:justify-center md:py-0' >
 
           <section className='flex flex-col items-center gap-10 md:w-1/2 md:justify-center'>
             <div className='flex flex-col gap-8 w-full'>
@@ -26,7 +26,7 @@ const Hero = () => {
 
           <section className='w-full mt-16 md:flex-1 md:w-1/2 md:my-8'>
             <div className='w-full md:h-full '>
-              <img className='w-full max-w-[700px]' src="./GRUPO-DASHBOARDS.svg" alt="GRUPO-DASHBOARDS" />
+              <img className='w-full max-w-[700px]' src="/home/GRUPO-DASHBOARDS.svg" alt="GRUPO-DASHBOARDS" />
             </div>
           </section>
           </section>
@@ -40,24 +40,24 @@ const Hero = () => {
             <p className='text-xl'>Trabajamos con una red de clientes <span className='text-primary'>nacionales</span> e <span className='text-primary'>internacionales</span></p>
           </section>
 
-          <section className="flex justify-center items-center gap-8 w-full mt-10 overflow-x-auto whitespace-nowrap pl-0 pr-2">
+          <section id="clientes" className="flex justify-center items-center gap-8 w-full mt-10 overflow-x-auto whitespace-nowrap pl-0 pr-2">
             <div className="flex-shrink-0">
-              <img src="./LOGO-SVG.svg"  alt="SV FRESH" className='w-[120px]' />
+              <img src="/home/LOGO-SVG.svg"  alt="SV FRESH" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="./LOGO-ZELESTRA.svg" alt="ZELESTRA" className='w-[120px]' />
+              <img src="/home/LOGO-ZELESTRA.svg" alt="ZELESTRA" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="./LOGO-AES.svg" alt="AES" className='w-[80px]' />
+              <img src="/home/LOGO-AES.svg" alt="AES" className='w-[80px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="./LOGO-FARMACIAS-SIMILARES.svg" alt="FARMACIAS SIMILARES" className='w-[120px]' />
+              <img src="/home/LOGO-FARMACIAS-SIMILARES.svg" alt="FARMACIAS SIMILARES" className='w-[120px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="./LOGO-ARRENDAMEX.svg" alt="ARRENDAMEX" className='w-[100px]' />
+              <img src="/home/LOGO-ARRENDAMEX.svg" alt="ARRENDAMEX" className='w-[100px]' />
             </div>
             <div className="flex-shrink-0">
-              <img src="./LOGO-LA-BONANZA.svg" alt="LA BONANZA" className='w-[100px]' />
+              <img src="/home/LOGO-LA-BONANZA.svg" alt="LA BONANZA" className='w-[100px]' />
             </div>
 
         </section>
