@@ -2,8 +2,14 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function MainLayout() {
+  useEffect(() => {
+    AOS.init({ duration: 700, once: false });
+  }, []);
   return (
     <>
       <Navbar />

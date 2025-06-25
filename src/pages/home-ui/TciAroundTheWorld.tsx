@@ -1,6 +1,6 @@
 const TciAroundTheWorld = () => {
   return (
-    <section className="py-16 flex flex-col items-center font-wix">
+    <section data-aos="fade-up" className="py-16 flex flex-col items-center font-wix">
       <div className="text-center">
         <h3 className="text-4xl font-bold">TCI alrededor de<br></br> <span className="text-6xl text-primary ">Mundo</span></h3>
         <p className="text-2xl mt-2">

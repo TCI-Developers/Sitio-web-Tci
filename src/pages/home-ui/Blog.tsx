@@ -8,7 +8,7 @@ const Blog = () => {
             <h3 className="w-fit text-2xl font-bold whitespace-nowrap">Nuestro Blog</h3>  
             <div className="h-1 bg-primary rounded-xl w-full"></div>
         </div>
-        <div className="px-12 py-8">
+        <div data-aos="fade-up" className="px-12 py-8">
             <div className="bg-[#0a3a63] flex justify-center rounded-3xl  py-10 md:max-h-[600px] lg:max-h-[800px]">
                 <div className="cg-blue-500 grid gap-4 md:grid-cols-8 md:grid-rows-6 px-8 max-w-[1400px]">
                     <div className="md:col-span-5 md:row-span-6 min-h-[400px] md:min-h-full">

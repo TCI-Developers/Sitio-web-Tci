@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
       <header className="bg-primary shadow-md fixed top-0 left-0 w-full z-50 h-20">
         <div className="max-w-full mx-auto px-12 py-3 flex justify-between items-center">
           
-          <Link to="/" className="text-xl font-bold hover:scale-105">
+          <Link to="//" className="text-xl font-bold hover:scale-105">
             <img src="/home/LOGO-TCI.svg" className="h-12" />
           </Link>
 
@@ -54,9 +54,9 @@ const Navbar: React.FC = () => {
 
               <nav className="hidden md:flex space-x-6 text-text max-w-4/5 font-wix">
                 <Link to="//#inicio" className="hover:text-blue-500">Inicio</Link>
-                <Link to="/#servicios" className="hover:text-blue-500">Servicios</Link>
-                <Link to="/#clientes" className="hover:text-blue-500">Nuestros Clientes</Link>
-                <Link to="/#nosotros" className="hover:text-blue-500">Acerca de Nosotros</Link>
+                <Link to="//#servicios" className="hover:text-blue-500">Servicios</Link>
+                <Link to="//#clientes" className="hover:text-blue-500">Nuestros Clientes</Link>
+                <Link to="//#nosotros" className="hover:text-blue-500">Acerca de Nosotros</Link>
                 <Link to="/" className="hover:text-blue-500">Acceso Clientes</Link>
               </nav>
             </div>

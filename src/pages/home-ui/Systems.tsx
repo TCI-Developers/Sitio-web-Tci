@@ -14,7 +14,7 @@ const Systems = () => {
         
       </section>
 
-      <section id='servicios' className='flex justify-center bg-white-text w-full rounded-[90px] p-12'>
+      <section data-aos="fade-up" className='flex justify-center bg-white-text w-full rounded-[90px] p-12'>
             <div className='flex flex-col items-center md:3/4 lg:w-4/5'>
               <h3 className='text-primary font-semibold text-3xl'>Sistemas hechos a la medida <span className='text-black'>de tu empresa</span></h3>
               

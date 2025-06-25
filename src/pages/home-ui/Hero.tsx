@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
     <>
-        <section id="inicio" className='px-10 py-12 md:flex md:justify-center md:py-0' >
+        <section id="inicio" className='px-10 py-12 md:flex md:justify-center md:py-0 overflow-hidden' >
 
-          <section className='flex flex-col items-center gap-10 md:w-1/2 md:justify-center'>
+          <section data-aos='fade-right' className='flex flex-col items-center gap-10 md:w-1/2 md:justify-center'>
             <div className='flex flex-col gap-8 w-full'>
               <div className='flex flex-col font-semibold font-bebas md:items-start lg:items-start'>
                 <div className='p-0'>
@@ -24,23 +24,23 @@ const Hero = () => {
             </div>
           </section>
 
-          <section className='w-full mt-16 md:flex-1 md:w-1/2 md:my-8'>
+          <section data-aos='fade-left' className='w-full mt-16 md:flex-1 md:w-1/2 md:my-8'>
             <div className='w-full md:h-full '>
               <img className='w-full max-w-[700px]' src="/home/GRUPO-DASHBOARDS.svg" alt="GRUPO-DASHBOARDS" />
             </div>
           </section>
-          </section>
+        </section>
 
-          <section className='flex flex-col items-center gap-2 font-wix'>
+        <section id="clientes" className='flex flex-col items-center gap-2 font-wix'>
             <div className='flex gap-12 items-center w-full'>
               <div className='h-1 rounded-2xl w-full bg-primary'></div>
               <h4 className='text-4xl font-extrabold whitespace-nowrap'>Nuestros Clientes</h4>
               <div className='h-1 rounded-2xl w-full bg-primary'></div>
             </div>
             <p className='text-xl'>Trabajamos con una red de clientes <span className='text-primary'>nacionales</span> e <span className='text-primary'>internacionales</span></p>
-          </section>
+        </section>
 
-          <section id="clientes" className="flex justify-center items-center gap-8 w-full mt-10 overflow-x-auto whitespace-nowrap pl-0 pr-2">
+          <section  className="flex justify-center items-center gap-8 w-full mt-10 overflow-x-auto whitespace-nowrap pl-0 pr-2">
             <div className="flex-shrink-0">
               <img src="/home/LOGO-SVG.svg"  alt="SV FRESH" className='w-[120px]' />
             </div>
