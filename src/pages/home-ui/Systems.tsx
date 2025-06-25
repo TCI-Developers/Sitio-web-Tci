@@ -6,7 +6,7 @@ const Systems = () => {
       <section className='flex flex-col items-center py-12 px-12'>
         <h3 className='text-4xl text-center'>Nuestros <span className='font-semibold text-primary'>sistemas operativos</span> con tus <span className='font-semibold text-primary'>necesidades</span></h3>
         <p className='text-center text-2xl mt-2 w-4/5'>Un <span className='font-semibold text-primary'>buen sistema</span> aumenta el <span className='font-semibold text-primary'>rendimiento y eficacia</span> de tus procesos.</p>
-        <section className='flex flex-col items-center md:flex-row md:justify-center gap-6 md:gap-4 mt-4'>
+        <section data-aos="zoom-in" className='flex flex-col items-center md:flex-row md:justify-center gap-6 md:gap-4 mt-4'>
             <SystemsCard titulo='HERRAMIENTAS RESPONSIVAS' descripcion='Toda la información de su negocio desde cualquier dispositivo' fondo='/home/IMAGEN-PROCESO-1-1.svg' />
             <SystemsCard titulo='INNOVAR PROCESOS' descripcion='Soluciones en tecnología de la información especializadas en negocio' fondo='/home/IMAGEN-PROCESO-2.svg'/>
             <SystemsCard titulo='CONSULTORÍA' descripcion='Asesorias en linea de nuestro personal capacitado para  hacer que su negocio de más' fondo='/home/IMAGEN-PROCESO-3.svg'/>     
@@ -47,7 +47,6 @@ const Systems = () => {
                       La aplicación web que TCI proporciona a los clientes, tiene una visión completa de su información en tiempo real, y les permite gestionar los procesos operativos.
                     </p>
                   </div>
-                
                 </div>
 
                 {/* 3 */}

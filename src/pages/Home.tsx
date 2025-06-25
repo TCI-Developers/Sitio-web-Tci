@@ -6,11 +6,8 @@ import Blog from './home-ui/Blog.tsx';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-
 const Home = () => {
   const location = useLocation();
-
- 
 
   useEffect(() => {
     if (!location.hash) return;
@@ -34,8 +31,6 @@ const Home = () => {
     tryScroll();
   }, [location]);
   
-  
-
   return (
     <section className='mt-20 text-text w-full' style={{letterSpacing:'-0.099em'}}>
       <Hero />

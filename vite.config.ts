@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/home/',
   plugins: [react()],
+  build: {
+    target: 'esnext',             // mejor soporte moderno
+    minify: 'esbuild',            // más rápido y eficiente que terser
+    sourcemap: false,             // reduce tamaño en producción
+    chunkSizeWarningLimit: 500,  // útil si usas muchas librerías
+    assetsInlineLimit: 4096       // optimiza imágenes pequeñas
+  }
 })
