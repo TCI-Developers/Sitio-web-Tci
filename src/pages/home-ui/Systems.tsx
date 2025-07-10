@@ -3,9 +3,9 @@ import SystemsCard from './SystemsCard'
 const Systems = () => {
   return (
     <section className='flex flex-col items-center rounded-[90px] mt-4 font-wix'>
-      <section className='flex flex-col items-center py-12 px-12'>
-        <h3 className='text-4xl text-center'>Nuestros <span className='font-semibold text-primary'>sistemas operativos</span> con tus <span className='font-semibold text-primary'>necesidades</span></h3>
-        <p className='text-center text-2xl mt-2 w-4/5'>Un <span className='font-semibold text-primary'>buen sistema</span> aumenta el <span className='font-semibold text-primary'>rendimiento y eficacia</span> de tus procesos.</p>
+      <section className='flex flex-col items-center py-12 px-4'>
+        <h3 className='text-2xl text-center'>Nuestros <span className='font-semibold text-primary'>sistemas operativos</span> con tus <span className='font-semibold text-primary'>necesidades</span></h3>
+        <p className='text-center text-sm mt-2 w-4/5'>Un <span className='font-semibold text-primary'>buen sistema</span> aumenta el <span className='font-semibold text-primary'>rendimiento y eficacia</span> de tus procesos.</p>
         <section data-aos="zoom-in" className='flex flex-col items-center md:flex-row md:justify-center gap-6 md:gap-4 mt-4'>
             <SystemsCard titulo='HERRAMIENTAS RESPONSIVAS' descripcion='Toda la información de su negocio desde cualquier dispositivo' fondo='/home/IMAGEN-PROCESO-1-1.svg' />
             <SystemsCard titulo='INNOVAR PROCESOS' descripcion='Soluciones en tecnología de la información especializadas en negocio' fondo='/home/IMAGEN-PROCESO-2.svg'/>
@@ -14,9 +14,9 @@ const Systems = () => {
         
       </section>
 
-      <section data-aos="fade-up" className='flex justify-center bg-white-text w-full rounded-[90px] p-12'>
+      <section data-aos="fade-up" className='flex justify-center bg-white-text w-full rounded-[50px] md:rounded-[90px] px-8 py-12'>
             <div className='flex flex-col items-center md:3/4 lg:w-4/5'>
-              <h3 className='text-primary font-semibold text-3xl'>Sistemas hechos a la medida <span className='text-black'>de tu empresa</span></h3>
+              <h3 className='text-primary font-semibold text-center text-xl md:text-3xl'>Sistemas hechos a la medida <span className='text-black'>de tu empresa</span></h3>
               
               <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-2 mt-16">
                 {/* 1 */}

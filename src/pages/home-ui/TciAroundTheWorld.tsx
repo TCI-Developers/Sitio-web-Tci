@@ -2,8 +2,8 @@ const TciAroundTheWorld = () => {
   return (
     <section data-aos="fade-up" className="py-16 flex flex-col items-center font-wix">
       <div className="text-center">
-        <h3 className="text-4xl font-bold">TCI alrededor de<br></br> <span className="text-6xl text-primary ">Mundo</span></h3>
-        <p className="text-2xl mt-2">
+        <h3 className="text-2xl md:text-4xl font-bold">TCI alrededor de<br></br> <span className="text-4xl md:text-6xl text-primary ">Mundo</span></h3>
+        <p className="text-md md:text-2xl mt-2">
             Tenemos <span className="text-primary font-bold">presencia </span> 
             en <span className="text-primary font-bold">20</span> 
             <br></br>distintos países <span className="text-primary font-bold">alrededor del mundo</span>

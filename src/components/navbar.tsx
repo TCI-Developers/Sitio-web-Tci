@@ -17,15 +17,15 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header className="bg-primary shadow-md fixed top-0 left-0 w-full z-50 h-20">
-        <div className="max-w-full mx-auto px-12 py-3 flex justify-between items-center">
+        <div className="max-w-full mx-auto px-4 md:px-12 py-3 flex justify-between items-center ">
           
           <Link to="//" className="text-xl font-bold hover:scale-105">
-            <img src="/home/LOGO-TCI.svg" className="h-12" />
+            <img src="/home/LOGO-TCI.svg" className="h-8 md:h-12" />
           </Link>
 
-          <div className="flex items-center gap-10 md:gap-4 md:flex-row-reverse">
+          <div className="flex items-center gap-4 md:gap-4 md:flex-row-reverse">
             <div>
-              <p className="font-bebas font-bold tracking-tighter rounded-3xl text-text px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
+              <p className="font-bebas font-bold tracking-tighter rounded-3xl text-text text-sm sm:text-base px-4 sm:px-6 md:px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
                 CONTACTO
               </p>
             </div>
@@ -33,18 +33,18 @@ const Navbar: React.FC = () => {
             <div className="text-xs md:text-[14px] lg:text-[16px] leading-none flex justify-end">
               <button
                 onClick={toggleMenu}
-                className="md:hidden relative w-12 h-12"
+                className="md:hidden relative w-10 h-10 sm:w-12 sm:h-12"
                 aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
               >
                 <Menu
-                  className={`absolute top-0 left-0 w-12 h-12 text-text transition-all duration-1000 ease-in-out ${
+                  className={`absolute top-0 left-0 w-10 h-10 sm:w-12 sm:h-12 text-text transition-all duration-1000 ease-in-out ${
                     isOpen
                       ? "opacity-0 pointer-events-none rotate-90"
                       : "opacity-100 rotate-0"
                   }`}
                 />
                 <X
-                  className={`absolute top-0 left-0 w-12 h-12 text-text transition-all duration-1000 ease-in-out ${
+                  className={`absolute top-0 left-0 w-10 h-10 sm:w-12 sm:h-12 text-text transition-all duration-1000 ease-in-out ${
                     isOpen
                       ? "opacity-100 rotate-0"
                       : "opacity-0 pointer-events-none -rotate-90"
