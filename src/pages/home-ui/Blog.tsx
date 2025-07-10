@@ -1,7 +1,32 @@
+import { apiRequest } from "../../services/apiRequest";
 import BlogCard from "./BlogCard"
+import { useEffect, useState } from 'react';
 
 
+interface BlogPost {
+    id: string;
+    title: string;
+    description: string;
+    date: string;
+    status: string;
+    created_at: string;
+    updated_at: string;
+    images: string[];
+  }
 const Blog = () => {
+
+    const [posts, setPosts] = useState<BlogPost[]>([]);
+    
+    useEffect(() => {
+        apiRequest<BlogPost[]>('/api/getData.php', {
+          method: 'POST',
+          body: { status: 1 },
+        }).then((data) => {
+          if (data) setPosts(data);
+        });
+      }, []);
+      
+
   return (
     <section>
         <div className="flex items-center gap-4 pl-8">
@@ -10,39 +35,25 @@ const Blog = () => {
         </div>
         <div data-aos="fade-up" className="p-6">
             <div className="bg-[#0a3a63] flex justify-center rounded-3xl  py-10 md:max-h-[600px] lg:max-h-[800px]">
-                <div className="cg-blue-500 grid gap-4 md:grid-cols-8 md:grid-rows-6 px-4 md:px-8 max-w-[1400px]">
-                    <div className="md:col-span-5 md:row-span-6 min-h-[400px] md:min-h-full">
-                        <BlogCard 
-                        titulo="TRANSFORMACIÓN DIGITAL Y AUTOMÁTIZACIÓN" 
-                        descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                            En el mundo empresarial actual, la transformación digital ya no es una 
-                            alternativa: es un requisito para mantenerse competitivo.
-                            Las empresas que adoptan tecnologías."
-                        fondo="/home/IMAGEN-TEMA-BLOG-1.png"
-                        />
-                    </div>
-                    <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
-                        <BlogCard 
-                                titulo="AUTOMATIZAR PROCESOS BENEFICIOS CONCRETOS PARA PEQUEÑAS Y MEDIANAS EMPRESAS" 
-                                descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                                    En el mundo empresarial actual, la transformación digital ya no es una 
-                                    alternativa: es un requisito para mantenerse competitivo.
-                                    Las empresas que adoptan tecnologias.
-                                "
-                                fondo="/home/IMAGEN-TEMA-BLOG-2.png"
-                        />
-                    </div>
-                    <div className="md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full">
-                        <BlogCard 
-                                titulo="DE EXCEL A ERP CUANDO Y PORQUE DAR EL SIGUIEMTE PASO" 
-                                descripcion="¿Por qué la transformación digital ya no es opcional para las empresas?
-                                    En el mundo empresarial actual, la transformación digital ya no es una 
-                                    alternativa: es un requisito para mantenerse competitivo.
-                                    Las empresas que adoptan tecnologias.
-                                "
-                                fondo="/home/IMAGEN-TEMA-BLOG-3.png"
-                        />
-                    </div>
+                <div className="cg-blue-500 grid gap-4 md:grid-cols-8 md:grid-rows-6 px-4 md:px-8 min-w-[90%] max-w-[1400px] min-h-[500px]">
+
+                    {
+                        posts.map((post, index) => (
+                            <div key={post.id} className={`
+                                ${
+                                    index == 0 ? 'md:col-span-5 md:row-span-6 min-h-[400px] md:min-h-full' 
+                                    : index==1 ? 'md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full' 
+                                    : 'md:col-span-3 md:row-span-3 min-h-[400px] md:min-h-full' }`
+                                }>
+                                <BlogCard 
+                                titulo={post.title} 
+                                descripcion={post.description}
+                                fondo={post.images[0]}
+                                />
+                            </div>
+                        ) )
+                    }
+                    
                 </div>
             </div>
 

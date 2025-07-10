@@ -11,5 +11,14 @@ export default defineConfig({
     sourcemap: false,             // reduce tamaño en producción
     chunkSizeWarningLimit: 500,  // útil si usas muchas librerías
     assetsInlineLimit: 4096       // optimiza imágenes pequeñas
-  }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://tciconsultoria.com/TCIWEB',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })

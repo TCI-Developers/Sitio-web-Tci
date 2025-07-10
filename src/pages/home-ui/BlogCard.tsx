@@ -1,3 +1,4 @@
+import TextoCortadoConLink from "../../services/cutTextWithLink";
 
 interface Propiedades {
     titulo: string;
@@ -18,9 +19,7 @@ const BlogCard = ({titulo,descripcion,fondo}:Propiedades) => {
         <h3 className="text-white lg:text-lg xl:text-xl font-bold font-bebas leading-none">
           {titulo}
         </h3>
-        <p className="text-xs lg:text-sm text-white mt-2 font-wix tracking-normal leading-none">
-          {descripcion}
-        </p>
+        <TextoCortadoConLink texto={descripcion} limite={250} urlDetalle={`/`} />
       </div>
     </section>
 
