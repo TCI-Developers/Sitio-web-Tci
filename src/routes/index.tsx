@@ -1,8 +1,7 @@
-// src/routes/index.tsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../pages/Home";
-import About from "../pages/About";
 import MainLayout from "../layouts/MainLayout";
+import Contacto from "../pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +9,7 @@ const router = createBrowserRouter([
     element: <MainLayout />, // Layout base
     children: [
       { index: true, element: <Home /> }, // Ruta "/"
-      { path: "about", element: <About /> }, // Ruta "/about"
+      { path: "contacto", element: <Contacto /> }, // Ruta "/contacto"
     ],
   },
   {

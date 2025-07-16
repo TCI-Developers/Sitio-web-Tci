@@ -7,7 +7,10 @@ interface TextoCortadoConLinkProps {
 }
 
 export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle }: TextoCortadoConLinkProps) {
-  const textoRecortado = texto.length > limite ? texto.slice(0, limite) + '...' : texto;
+  const textoRecortado = typeof texto === 'string' && texto.length > limite
+  ? texto.slice(0, limite) + '...'
+  : texto ?? '';
+
 
   return (
     <p className='text-xs lg:text-sm text-white mt-2 font-wix tracking-normal leading-none'>

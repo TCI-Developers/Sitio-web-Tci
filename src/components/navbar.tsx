@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { HashLink } from 'react-router-hash-link';
+
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-4 md:gap-4 md:flex-row-reverse">
             <div>
               <p className="font-bebas font-bold tracking-tighter rounded-3xl text-text text-sm sm:text-base px-4 sm:px-6 md:px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
-                CONTACTO
+                <Link to="/contacto">CONTACTO</Link>
               </p>
             </div>
 

@@ -17,8 +17,9 @@ const Blog = () => {
 
     const [posts, setPosts] = useState<BlogPost[]>([]);
     
+    // '/api/getData.php'
     useEffect(() => {
-        apiRequest<BlogPost[]>('/api/getData.php', {
+        apiRequest<BlogPost[]>('https://tciconsultoria.com/TCIWEB/getData.php', {
           method: 'POST',
           body: { status: 1 },
         }).then((data) => {
