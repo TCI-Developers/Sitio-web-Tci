@@ -13,7 +13,7 @@ export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle }:
 
 
   return (
-    <p className='text-xs lg:text-sm text-white mt-2 font-wix tracking-normal leading-none'>
+    <p className='text-base md:text-lg text-white mt-2 font-wix tracking-normal leading-none'>
       {textoRecortado}{' '}
       <Link to={urlDetalle} className="text-blue-600 underline">
           Leer más
