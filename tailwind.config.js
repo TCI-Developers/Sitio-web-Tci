@@ -9,7 +9,10 @@ export default withMT({
   ],
   theme: {
     extend: {
-     
+      fontFamily: {
+        bebas: ['"Bebas Neue"', 'cursive'],
+        wix: ['"Wix Madefor Display"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

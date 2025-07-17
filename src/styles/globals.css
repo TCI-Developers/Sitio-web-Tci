@@ -34,42 +34,6 @@
     font-size: 3.2em;
     line-height: 1.1;
   }
-
-
-/* === Fuentes Bebas Neue === */
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('./assets/fonts/Bebas_Neue/BebasNeue-Regular.otf') format('opentype');
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: 'Bebas Neue';
-    src: url('./assets/fonts/Bebas_Neue/BebasNeue-Bold.otf') format('opentype');
-    font-weight: 700;
-  }
-  
-  /* === Fuentes Wix Madefor Display === */
-  @font-face {
-    font-family: 'Wix Madefor';
-    src: url('./assets/fonts/Wix_MadeforDisplay/Wix_MadeforDisplay-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: 'Wix Madefor';
-    src: url('./assets/fonts/Wix_MadeforDisplay/Wix_MadeforDisplay-Bold.ttf') format('truetype');
-    font-weight: 700;
-  }
-  
-  /* === Clases personalizadas === */
-  .font-bebas {
-    font-family: 'Bebas Neue', sans-serif;
-    
-  }
-  .font-wix {
-    font-family: 'Wix Madefor', sans-serif;
-    letter-spacing: 0.5px;
-  }
   
   @layer utilities {
     .bg-primary {

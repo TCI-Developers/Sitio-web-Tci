@@ -27,12 +27,12 @@ const Hero = () => {
               style={{ letterSpacing: "0px", lineHeight: "1.2" }}
             >
               <h3>
-                Con más de
+                Con más de 
                 <span className="font-semibold text-primary">
-                  35 años de experiencia
+                &nbsp;35 años de experiencia&nbsp;
                 </span>
-                y con presencia en mas de
-                <span className="font-semibold text-primary">20 países</span> en el mundo. <br />
+                  y con presencia en mas de
+                <span className="font-semibold text-primary">&nbsp;20 países&nbsp;</span> en el mundo. <br />
                 Transformamos tus procesos empresariales en sistemas inteligentes
               </h3>
             </div>
