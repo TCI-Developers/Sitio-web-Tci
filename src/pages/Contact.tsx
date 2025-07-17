@@ -8,7 +8,7 @@ import OurOffices from "./contact-ui/OurOffices"
 
 const Contacto = () => {
   return (
-    <section className='mt-20 text-text w-full px-8 grid grid-cols-1 md:grid-cols-2 tracking-normal' style={{letterSpacing:'-0.099em'}}>
+    <section className='mt-20 text-text w-full px-8 grid grid-cols-1 md:grid-cols-2 font-wix'>
         <ContactInfo />
         <Form />  
         <Map />

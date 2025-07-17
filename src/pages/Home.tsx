@@ -32,7 +32,7 @@ const Home = () => {
   }, [location]);
   
   return (
-    <section className='mt-20 text-text w-full' style={{letterSpacing:'-0.099em'}}>
+    <section className='mt-20 text-text w-full leading-normal'>
       <Hero />
       <div id='servicios' className='backdrop-blur-[200px] rounded-[50px]'>
         <Systems />

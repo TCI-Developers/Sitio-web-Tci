@@ -4,18 +4,19 @@ const Hero = () => {
     <>
       <section
         id="inicio"
-        className="px-3 sm:px-6 md:px-10 py-12 md:flex md:justify-center md:py-0 overflow-hidden w-full"
+        className="px-8 sm:px-6 md:px-10 py-12 md:flex md:justify-center md:py-0 overflow-hidden w-full"
       >
         <section
           data-aos="fade-right"
           className="flex flex-col items-center gap-10 md:w-1/2 md:justify-center w-full"
         >
           <div className="flex flex-col items-start gap-8 w-full">
+            
             <div className="flex flex-col font-semibold font-bebas items-center md:items-start lg:items-start  md:text-left">
               <div className="p-0">
-                <h2 className="flex flex-col text-sm sm:text-xl whitespace-normal leading-none md:text-sm lg:text-xl tracking-tight">
+                <h2 className="flex flex-col text-2xl sm:text-xl whitespace-normal leading-none md:text-2xl lg:text-4xl tracking-tight">
                   INNOVANDO SISTEMAS PARA MARCAR LA DIFERENCIA
-                  <span className="text-xl sm:text-3xl md:text-[22px] lg:text-[32px] whitespace-normal">
+                  <span className="text-[39px] md:text-4xl lg:text-6xl whitespace-normal">
                     Y BRINDAR MEJORES SERVICIOS
                   </span>
                 </h2>
@@ -23,7 +24,7 @@ const Hero = () => {
             </div>
 
             <div
-              className="text-base sm:text-lg md:text-base md:flex md:items-end lg:text-xl font-wix text-left md:text-left"
+              className="text-lg sm:text-lg md:text-base md:flex md:items-end lg:text-xl font-wix text-left md:text-left"
               style={{ letterSpacing: "0px", lineHeight: "1.2" }}
             >
               <h3>
@@ -36,6 +37,14 @@ const Hero = () => {
                 Transformamos tus procesos empresariales en sistemas inteligentes
               </h3>
             </div>
+
+            <div className="flex justify-center w-full md:justify-start"> 
+              <div className="max-w-48 md:max-w-64 mt-6">
+                <img src="CERTIFICACION-MEDALLA-Y-LOGO-QUICKBASE.png" alt="CERTIFICACION-MEDALLA-Y-LOGO-QUICKBASE" />
+              </div>
+            </div>
+            
+            
           </div>
         </section>
 

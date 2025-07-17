@@ -96,12 +96,12 @@ const TeamCarousel: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col gap-4 pt-4 pb-6">
-                <h3 className="font-bold text-xl md:text-lg uppercase font-bebas">
+                <h3 className="font-bold text-3xl md:text-lg uppercase font-bebas">
                   {member.name}
                 </h3>
                 <div className='font-wix'>
                     <div className="flex justify-between items-center pr-2">
-                      <h4 className="text-lg font-bold text-secondary">
+                      <h4 className="text-2xl font-extrabold text-secondary">
                           {member.role}
                       </h4>
                       <FaLinkedin size={24} className="text-white" />

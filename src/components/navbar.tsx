@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <header className="bg-primary shadow-md fixed top-0 left-0 w-full z-50 h-20">
+      <header className="bg-primary shadow-md fixed top-0 left-0 w-full z-50 h-20 tracking-normal">
         <div className="max-w-full mx-auto px-4 md:px-12 py-3 flex justify-between items-center ">
           
           <Link to="/" className="text-xl font-bold hover:scale-105">
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
           <div className="flex items-center gap-4 md:gap-4 md:flex-row-reverse">
             <div>
-              <p className="font-bebas font-bold tracking-tighter rounded-3xl text-text text-sm sm:text-base px-4 sm:px-6 md:px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
+              <p className="font-bebas font-bold  rounded-3xl text-text text-base sm:text-base px-8 sm:px-6 md:px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
                 <Link to="/contacto">CONTACTO</Link>
               </p>
             </div>

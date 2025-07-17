@@ -16,13 +16,13 @@ const Systems = () => {
 
       <section data-aos="fade-up" className='flex justify-center bg-white-text w-full rounded-[50px] md:rounded-[90px] px-8 py-12'>
             <div className='flex flex-col items-center md:3/4 lg:w-4/5'>
-              <h3 className='text-primary font-semibold text-center text-xl md:text-3xl'>Sistemas hechos a la medida <span className='text-black'>de tu empresa</span></h3>
+              <h3 className='text-primary font-extrabold text-center text-xl md:text-3xl '>Sistemas hechos a la medida <span className='text-black'>de tu empresa</span></h3>
               
               <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-2 mt-16">
                 {/* 1 */}
                 <div className="bg-[#dce9ed] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 lg:col-span-3 relative overflow-hidden min-h-[400px]">
                   <div className="relative z-10">
-                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
+                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4 font-bebas">
                       COMUNICACIÓN REMOTA
                     </h3>
                     <p className="text-accent text-base md:text-lg lg:text-base">
@@ -40,7 +40,7 @@ const Systems = () => {
                 <div className="bg-[#c1ebfc] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 relative overflow-hidden min-h-[400px]">
                   <div className="relative z-10">
                     <img src="/home/CONECTADO-DE-EXTREMO-A-EXTREMO.svg" className="mb-4 w-full h-auto" alt="Extremo a extremo" />
-                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
+                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4 font-bebas">
                       CONECTADO DE EXTREMO A EXTREMO
                     </h3>
                     <p className="text-accent text-base md:text-lg lg:text-base">
@@ -53,7 +53,7 @@ const Systems = () => {
                 <div className="bg-[#c1ebfc] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 flex flex-col justify-between">
                   <img src="/home/PROJECT-MANAGEMENT.svg" className="mb-4 w-full h-auto" alt="Project Management" />
                   <div>
-                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
+                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4 font-bebas">
                       PROJECT MANAGEMENT
                     </h3>
                     <p className="text-accent text-base md:text-lg lg:text-base">
@@ -65,7 +65,7 @@ const Systems = () => {
                 {/* 4 */}
                 <div className="bg-[#dce9ed] p-6 md:p-8 lg:p-10 rounded-lg md:col-span-2 lg:col-span-3 relative overflow-hidden min-h-[400px]">
                   <div className="relative z-10">
-                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4">
+                    <h3 className="text-secondary text-xl md:text-2xl lg:text-lg font-bold mb-4 font-bebas">
                       CONTROL, EXACTITUD Y CUMPLIMIENTO
                     </h3>
                     <p className="text-accent text-base md:text-lg lg:text-base">

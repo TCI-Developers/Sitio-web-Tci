@@ -2,7 +2,7 @@
 
 const Map = () => {
     return (
-      <div className="my-8 rounded-2xl overflow-hidden md:my-0 md:w-11/12 min-h-80 md:max-w-[600px] md:flex md:mx-auto">
+      <div className="my-8 rounded-2xl overflow-hidden md:my-0 md:w-11/12 min-h-80 md:max-w-[600px] md:flex md:mx-auto md:max-h-[400px]">
         <iframe
           width="100%"
           height="100%"

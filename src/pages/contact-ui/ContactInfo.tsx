@@ -5,12 +5,11 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 const ContactInfo = () => {
   return (
     <section className="md:flex md:justify-center tracking-normal">
-      <div className="font-bebas py-12 flex flex-col gap-4 md:py-16 md:max-w-[600px]">
-        <h2 className="font-bold text-3xl sm:text-xl whitespace-normal leading-10 text-primary md:text-5xl md:tracking-tighter">INFORMACIÓN DE CONTACTO</h2>
-        <p className="font-wix font-semibold text-xl md:text-sm md:mb-8">Gracias por tu visita, estamos aquí para ayudarte. Visitanos en:</p>
+      <div className="py-12 flex flex-col gap-4 md:py-16 w-full max-w-[600px]">
+        <h2 className="font-bebas whitespace-normal leading-[3.5rem] text-primary text-5xl">INFORMACIÓN DE CONTACTO</h2>
+        <p className="font-wix font-semibold text-base md:text-sm md:mb-8">Gracias por tu visita, estamos aquí para ayudarte. Visitanos en:</p>
         
         <div className="flex gap-2 p-2 bg-white rounded-xl text-black text-[11px]">
-        
           <div className="flex gap-2 flex-1 border-r-black border-r">
           <div className="flex items-center justify-center"><TbClockHour4 color="#00c0f4" size={25}/></div>
             <div>
@@ -31,7 +30,7 @@ const ContactInfo = () => {
           
         </div>
 
-        <div className="flex gap-2 bg-primary w-1/2 rounded-full p-2 md:mt-4">
+        <div className="flex gap-2 bg-primary w-2/3 lg:w-1/2 rounded-full p-2 md:mt-4">
           <div className="bg-white rounded-full p-2"><CgPhone size={25} color="#00c0f4"/></div>
           <p className="flex items-center">(452) 524 2530</p>
         </div>
