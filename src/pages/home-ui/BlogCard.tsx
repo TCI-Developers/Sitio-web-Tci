@@ -4,6 +4,7 @@ interface Propiedades {
     titulo: string;
     descripcion: string;
     fondo?:string;
+    id?:string;
   }
 const BlogCard = ({titulo,descripcion,fondo}:Propiedades) => {
   return (

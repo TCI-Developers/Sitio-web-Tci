@@ -2,6 +2,11 @@ import { apiRequest } from "../../services/apiRequest";
 import BlogCard from "./BlogCard"
 import { useEffect, useState } from 'react';
 
+interface BlogImage {
+    id: string;
+    path_img: string;
+    path_name: string;
+  }
 
 interface BlogPost {
     id: string;
@@ -11,7 +16,7 @@ interface BlogPost {
     status: string;
     created_at: string;
     updated_at: string;
-    images: string[];
+    images: BlogImage[];
   }
 const Blog = () => {
 
@@ -20,7 +25,7 @@ const Blog = () => {
     // '/api/getData.php'
     //'https://tciconsultoria.com/TCIWEB/getData.php'
     useEffect(() => {
-        apiRequest<BlogPost[]>('/api/getData.php', {
+        apiRequest<BlogPost[]>('https://tciconsultoria.com/TCIWEB/getData.php', {
           method: 'POST',
           body: { status: 1 },
         }).then((data) => {
@@ -28,6 +33,7 @@ const Blog = () => {
         });
       }, []);
       
+      console.log(posts);
 
   return (
     <section>
@@ -50,7 +56,8 @@ const Blog = () => {
                                 <BlogCard 
                                 titulo={post.title} 
                                 descripcion={post.description}
-                                fondo={post.images[0]}
+                                fondo={post.images[0]?.path_img}
+                                id={post.id}
                                 />
                             </div>
                         ) )
