@@ -5,7 +5,7 @@ const TciAroundTheWorld = () => {
         <h3 className="text-2xl font-extrabold">TCI alrededor del<br></br> <span className="text-4xl md:text-5xl text-primary ">Mundo</span></h3>
         <p className="text-md md:text-xl mt-2">
             Tenemos <span className="text-primary font-bold">presencia </span> 
-            en <span className="text-primary font-bold">20</span> 
+            en <span className="text-primary font-bold">20 </span> 
             distintos países <span className="text-primary font-bold">alrededor del mundo</span>
         </p>
       </div>

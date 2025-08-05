@@ -20,13 +20,13 @@ const Navbar: React.FC = () => {
         <div className="max-w-full mx-auto px-4 md:px-12 py-3 flex justify-between items-center ">
           
           <Link to="/" className="text-xl font-bold hover:scale-105">
-            <img src="/home/LOGO-TCI.svg" className="h-8 md:h-12" />
+            <img src="/home/LOGO-TCI-NEG-AZUL-OSCURO.svg" className="h-8 md:h-12" />
           </Link>
           
 
           <div className="flex items-center gap-4 md:gap-4 md:flex-row-reverse">
             <div>
-              <p className="font-bebas font-bold  rounded-3xl text-text text-base sm:text-base px-8 sm:px-6 md:px-8 py-1.5 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
+              <p className="font-bebas font-bold  rounded-lg text-text text-base sm:text-base px-8 sm:px-6 md:px-8 py-1 bg-gradient-to-l from-[#0f245f] cursor-pointer hover:scale-x-105">
                 <Link to="/contacto">CONTACTO</Link>
               </p>
             </div>

@@ -9,7 +9,7 @@ const Form = () => {
           Si tienes una pregunta, puedes contactarnos.
           Rellena el formulario con tus datos, y te mandaremos un mail.
         </p>
-        <form className="p-2" action="https://formsubmit.co/alexisgmez65@gmail.com" method="POST">
+        <form className="p-2" action="https://formsubmit.co/ArmandoJr@tciconsultoriamx.onmicrosoft.com" method="POST">
           
           <div className="flex gap-2">
               <input className="w-1/2 border-b-2 border-b-black py-2 focus:outline-none placeholder-gray-600" type="text" name="nombre" placeholder="Nombre(s)" required />

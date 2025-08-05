@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="w-full md:h-full max-w-[700px] px-4 sm:px-0">
             <img
               className="w-full"
-              src="/home/GRUPO-DASHBOARDS.svg"
+              src="/home/DASHBOARDS.svg"
               alt="GRUPO-DASHBOARDS"
               loading="eager"
             />

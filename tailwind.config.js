@@ -13,6 +13,9 @@ export default withMT({
         bebas: ['"Bebas Neue"', 'cursive'],
         wix: ['"Wix Madefor Display"', 'sans-serif'],
       },
+      screens:{
+        '3xl':'1800px'
+      }
     },
   },
   plugins: [],

@@ -4,18 +4,19 @@ interface TextoCortadoConLinkProps {
   texto: string;
   limite?: number;
   urlDetalle: string; // URL a la que va el "Leer más"
+  index?:number
 }
 
-export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle }: TextoCortadoConLinkProps) {
+export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle,index }: TextoCortadoConLinkProps) {
   const textoRecortado = typeof texto === 'string' && texto.length > limite
   ? texto.slice(0, limite) + '...'
   : texto ?? '';
 
 
   return (
-    <p className='text-base md:text-lg text-white mt-2 font-wix tracking-normal leading-none'>
+    <p className={`text-lg text-white mt-2 font-wix tracking-normal leading-none ${index == 0 ? 'md:text-xl' : 'md:text-sm' }`}>
       {textoRecortado}{' '}
-      <Link to={urlDetalle} className="text-blue-600 underline">
+      <Link to={urlDetalle} className="text-blue-600 underline font-bold">
           Leer más
       </Link>
     </p>

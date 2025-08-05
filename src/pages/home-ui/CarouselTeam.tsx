@@ -55,7 +55,7 @@ const TeamCarousel: React.FC = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden relative lg:max-w-[80%] xl:max-w-[60%]">
+    <div className="w-full overflow-hidden relative lg:max-w-[80%]">
       {/* Flecha izquierda */}
       {currentIndex > 0 && (
         <button
@@ -85,14 +85,14 @@ const TeamCarousel: React.FC = () => {
         {teamData.map((member, idx) => (
           <div
             key={idx}
-            className="w-full md:w-[48%] flex-shrink-0"
+            className="w-full md:w-[48%] flex-shrink-0 "
           >
             <div className=" rounded-2xl pb-4 text-white h-full">
               <div className="rounded-2xl overflow-hidden">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="h-[400px] md:h-64 w-full object-cover"
+                  className="h-[400px] md:h-56 2xl:h-[350px]  w-full object-cover"
                 />
               </div>
               <div className="flex flex-col gap-4 pt-4 pb-6">

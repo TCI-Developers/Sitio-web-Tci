@@ -25,7 +25,7 @@ const Blog = () => {
     // '/api/getData.php'
     //'https://tciconsultoria.com/TCIWEB/getData.php'
     useEffect(() => {
-        apiRequest<BlogPost[]>('/api/getData.php', {
+        apiRequest<BlogPost[]>('https://tciconsultoria.com/TCIWEB/getData.php', {
           method: 'POST',
           body: { status: 1 },
         }).then((data) => {
@@ -38,12 +38,12 @@ const Blog = () => {
   return (
     <section>
         <div className="flex items-center gap-4 pl-8">
-            <h3 className="w-fit text-2xl font-bold whitespace-nowrap">Nuestro Blog</h3>  
+            <h3 className="w-fit text-2xl xl:text-[48px] font-bold whitespace-nowrap">Nuestro Blog</h3>  
             <div className="h-1 bg-primary rounded-xl w-full"></div>
         </div>
         <div data-aos="fade-up" className="p-6">
             <div className="bg-[#0a3a63] flex justify-center rounded-3xl  py-10 md:max-h-[600px] lg:max-h-[800px]">
-                <div className="cg-blue-500 grid gap-4 md:grid-cols-8 md:grid-rows-6 px-4 md:px-8 min-w-[90%] max-w-[1400px] min-h-[500px]">
+                <div className="cg-blue-500 grid gap-4 md:grid-cols-8 md:grid-rows-6 px-4 md:px-8 min-w-[90%] max-w-[1400px] min-h-[700px]">
 
                     {
                         posts.map((post, index) => (
@@ -58,6 +58,7 @@ const Blog = () => {
                                 descripcion={post.description}
                                 fondo={post.images[0]?.path_img}
                                 id={post.id}
+                                index={index}
                                 />
                             </div>
                         ) )
