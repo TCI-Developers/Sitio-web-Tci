@@ -40,7 +40,7 @@ const Hero = () => {
 
             <div className="flex justify-center w-full md:justify-start"> 
               <div className="max-w-48 md:max-w-64 mt-6">
-                <img src="CERTIFICACION-MEDALLA-Y-LOGO-QUICKBASE.png" alt="CERTIFICACION-MEDALLA-Y-LOGO-QUICKBASE" />
+                <img src="/home/ELEMENTOS-QUICKBASE-CERTIFIED-LEYENDA.png" alt="CERTIFICACION-MEDALLA-Y-LOGO-QUICKBASE" />
               </div>
             </div>
             
