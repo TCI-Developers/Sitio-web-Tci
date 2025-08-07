@@ -3,7 +3,7 @@ import TeamCarousel from './CarouselTeam'
 const ManagmentTeam = () => {
   return (
     <section data-aos="fade-up" id="nosotros" className='flex flex-col gap-8 px-8 py-12 text-xl md:flex-row'>
-      <div className='flex flex-col md:flex-1  gap-6 font-wix py-10 pl-14'>
+      <div className='flex flex-col md:flex-1  gap-6 font-wix py-10 md:pl-14'>
         <h3 className='text-3xl md:text-[28px] text-center font-extrabold text-primary md:text-left'> Nuestro equipo directivo</h3>
         <p className='text-base md:text-base'>Personas <span className='text-primary'>comprometidas con tu crecimiento</span></p>
         <p className='text-base md:text-base'>Detrás de cada solución de TCI hay personas con <span className='text-primary'>vocación, experiencia y una profunda compresión de los desafíos empresariales</span></p>

@@ -4,7 +4,7 @@ interface TextoCortadoConLinkProps {
   texto: string;
   limite?: number;
   urlDetalle: string; // URL a la que va el "Leer más"
-  index?:number
+  index?:number;
 }
 
 export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle,index }: TextoCortadoConLinkProps) {

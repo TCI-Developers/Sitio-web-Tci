@@ -1,0 +1,47 @@
+
+.content-html h1,
+.content-html h2,
+.content-html h3,
+.content-html h4 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+.content-html h1{
+  font-size:40px;
+}
+
+.content-html h2,
+.content-html h3,
+.content-html h4 {
+  font-size:24px;
+  margin:8px 0;
+  line-height:1.3;
+}
+
+.content-html p{
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-size: 14px;
+  line-height:1.3;
+  
+}
+
+.content-html ol {
+  list-style-type: disc !important; /* números para ol */
+  padding-left: 40px !important; /* espacio para la numeración */
+  margin: 1em 0 !important;
+  
+}
+
+.content-html ol li {
+  list-style-position: outside !important; /* que el número quede afuera */
+  display: list-item !important; /* aseguramos que se renderice como ítem */
+  font-size: 14px;
+  line-height:1.3;
+}
+
+.content-html img{
+  border-radius: 1rem;
+  min-height:300px;
+  margin: 1rem 0;
+  object-fit: cover;
+}
+

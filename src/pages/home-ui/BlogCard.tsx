@@ -36,7 +36,7 @@ const BlogCard = ({titulo,descripcion,fondo,id,index}:Propiedades) => {
         <h3 className={`text-primary font-bold font-bebas leading-none ${index==0?'text-4xl md:text-[48px]':'text-4xl md:text-2xl'}`}>
           {titulo}  #{id}
         </h3>
-        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/`} index={index}/>
+        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/blog/${id}`} index={index} />
       </div>
     </section>
 

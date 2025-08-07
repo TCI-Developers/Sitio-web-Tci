@@ -25,7 +25,7 @@ const Blog = () => {
     // '/api/getData.php'
     //'https://tciconsultoria.com/TCIWEB/getData.php'
     useEffect(() => {
-        apiRequest<BlogPost[]>('https://tciconsultoria.com/TCIWEB/getData.php', {
+        apiRequest<BlogPost[]>('/api/getData.php', {
           method: 'POST',
           body: { status: 1 },
         }).then((data) => {
