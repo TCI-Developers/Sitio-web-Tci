@@ -20,7 +20,7 @@ export function setAllEmptyImgSrc(
         img.setAttribute('src', src);
         img.setAttribute('alt', 'Imagen del blog');
         if(imgIndex == 0){
-          img.classList.add('w-[100%]','md:w-[30%]','lg:w-[25%]','md:float-right','md:h-[350px]');
+          img.classList.add('w-[100%]','md:w-[30%]','lg:w-[25%]','md:float-right','md:h-[350px]','2xl:h-[500px]','lg:w-[25%]');
         }else{
           img.classList.add('md:hidden');
         }
