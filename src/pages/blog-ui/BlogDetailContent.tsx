@@ -36,7 +36,7 @@ interface Image {
     const htmlWithImages = setAllEmptyImgSrc(post.description, imgsUrls);
 
     return (
-      <div className="content-html text-black w-full px-8 font-wix md:py-8 md:flex md:justify-center">
+      <div className="content-html w-full px-8 font-wix md:py-8 md:flex md:justify-center">
         <div className='md:w-[90%]'>
           <div className='text-primary'>
             <h1>{post.title}</h1>
@@ -50,7 +50,7 @@ interface Image {
               
             />
           
-            <div className='hidden md:block md:h-96 overflow-hidden rounded-2xl'>
+            <div className='hidden md:block md:h-96 overflow-hidden rounded-2xl w-full'>
               <img src={post.images[1].path_img}  />
             </div>
           </div>

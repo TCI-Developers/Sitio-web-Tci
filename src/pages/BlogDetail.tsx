@@ -37,7 +37,7 @@ export default function BlogDetail() {
   // /api/getData.php
   // https://tciconsultoria.com/TCIWEB/getData.php
   const getData = async (id: string) => {
-    const data = await apiRequest<BlogPost[]>("/api/getData.php", {
+    const data = await apiRequest<BlogPost[]>("https://tciconsultoria.com/TCIWEB/getData.php", {
       method: "POST",
       body: { id },
     });

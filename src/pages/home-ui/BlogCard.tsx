@@ -4,7 +4,7 @@ interface Propiedades {
     titulo: string;
     descripcion: string;
     fondo?:string;
-    id?:string;
+    id:string;
     index?:number;
     imgValidation:string;
   }
@@ -35,9 +35,9 @@ const BlogCard = ({titulo,descripcion,fondo,id,index,imgValidation}:Propiedades)
     >
       <div className="flex flex-col justify-end w-full p-4 sm:p-5 md:p-6 lg:p-8 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
         <h3 className={`text-primary font-bold font-bebas leading-none ${index==0?'text-4xl md:text-[48px]':'text-4xl md:text-2xl'}`}>
-          {titulo}  #{id}
+          {titulo}
         </h3>
-        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/blog/${id}`} index={index} imgValidation={imgValidation} />
+        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/blog/${id}`} index={index} imgValidation={imgValidation} id={id} />
       </div>
     </section>
 

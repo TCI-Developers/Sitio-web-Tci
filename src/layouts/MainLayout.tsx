@@ -9,13 +9,14 @@ import "aos/dist/aos.css";
 export default function MainLayout() {
   const location = useLocation();
   const isBlogRoute = location.pathname.includes('/blog/');
+
   useEffect(() => {
     AOS.init({ duration: 700, once: false });
   }, []);
   return (
     <>
       <Navbar />
-      <main className={`flex flex-col min-h-screen m-0 w-full ${!isBlogRoute ? 'bg-gradient-to-r from-[#0f245f] to-[#00c0f4]' : 'bg-white'}`}>
+      <main className={`flex flex-col min-h-screen m-0 w-screen ${!isBlogRoute ? 'bg-gradient-to-r from-[#0f245f] to-[#00c0f4]' : 'bg-white w-full'}`}>
         <Outlet /> 
       </main>
       <Footer />
