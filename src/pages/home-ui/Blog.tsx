@@ -21,20 +21,18 @@ interface BlogPost {
 const Blog = () => {
 
     const [posts, setPosts] = useState<BlogPost[]>([]);
-    
+
     // '/api/getData.php'
     //'https://tciconsultoria.com/TCIWEB/getData.php'
     useEffect(() => {
-        apiRequest<BlogPost[]>('https://tciconsultoria.com/TCIWEB/getData.php', {
+        apiRequest<BlogPost[]>('/api/getData.php', {
           method: 'POST',
           body: { status: 1 },
         }).then((data) => {
           if (data) setPosts(data);
         });
       }, []);
-      
-      
-
+    
   return (
     <section>
         <div className="flex items-center gap-4 pl-8">
@@ -47,6 +45,7 @@ const Blog = () => {
 
                     {
                         posts.map((post, index) => (
+                            
                             <div key={post.id} className={`
                                 ${
                                     index == 0 ? 'md:col-span-5 md:row-span-6 min-h-[400px] md:min-h-full' 
@@ -59,6 +58,7 @@ const Blog = () => {
                                 fondo={post.images[0]?.path_img}
                                 id={post.id}
                                 index={index}
+                                imgValidation={post.images[1]?.path_img}
                                 />
                             </div>
                         ) )

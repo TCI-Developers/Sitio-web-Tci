@@ -34,7 +34,8 @@ export default function BlogDetail() {
     window.scrollTo(0, 0);
   }, []);
   
-
+  // /api/getData.php
+  // https://tciconsultoria.com/TCIWEB/getData.php
   const getData = async (id: string) => {
     const data = await apiRequest<BlogPost[]>("/api/getData.php", {
       method: "POST",

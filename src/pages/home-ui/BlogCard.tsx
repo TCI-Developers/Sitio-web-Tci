@@ -6,8 +6,9 @@ interface Propiedades {
     fondo?:string;
     id?:string;
     index?:number;
+    imgValidation:string;
   }
-const BlogCard = ({titulo,descripcion,fondo,id,index}:Propiedades) => {
+const BlogCard = ({titulo,descripcion,fondo,id,index,imgValidation}:Propiedades) => {
   //obtengo el primer parrafo del html
   const tempDiv = document.createElement('div');
   tempDiv.innerHTML = descripcion;
@@ -36,7 +37,7 @@ const BlogCard = ({titulo,descripcion,fondo,id,index}:Propiedades) => {
         <h3 className={`text-primary font-bold font-bebas leading-none ${index==0?'text-4xl md:text-[48px]':'text-4xl md:text-2xl'}`}>
           {titulo}  #{id}
         </h3>
-        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/blog/${id}`} index={index} />
+        <TextoCortadoConLink texto={firstRealText} limite={250} urlDetalle={`/blog/${id}`} index={index} imgValidation={imgValidation} />
       </div>
     </section>
 
