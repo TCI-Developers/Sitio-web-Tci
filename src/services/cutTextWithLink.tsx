@@ -17,7 +17,7 @@ export default function TextoCortadoConLink({ texto, limite = 100, urlDetalle,in
 
   return (
     <p className={`text-lg text-white mt-2 font-wix tracking-normal leading-none ${index == 0 ? 'md:text-xl' : 'md:text-sm' }`}>
-      {textoRecortado}{' '}#{id}{' '}
+      {textoRecortado}{' '}#{id}{' ...'}
       {
         imgValidation ?
         <Link to={urlDetalle} className="text-blue-600 underline font-bold">
