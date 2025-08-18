@@ -13,7 +13,7 @@ const ManagmentTeam = () => {
           <span className='text-primary font-semibold'> maximizar tus resultados y brindarte tranquilidad.” </span>
         </p>
       </div>
-      <div className="md:mx-auto py-10 flex justify-center md:pl-14">
+      <div className="w-full mx-auto md:px-14">
         <TeamCarousel />
       </div>
     </section>

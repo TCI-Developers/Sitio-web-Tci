@@ -1,125 +1,127 @@
-import React, { useEffect, useState } from 'react';
-import { FaLinkedin, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { FaLinkedin } from 'react-icons/fa';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 type TeamMember = {
   name: string;
   role: string;
   description: string;
   image: string;
+  linkedinUrl:string;
 };
 
 const teamData: TeamMember[] = [
   {
-    name: 'ARMANDO ORTIZ DE MONTELLANO ARÉVALO',
-    role: 'CEO',
+    name: "Armando O. Senior ",
+    role: "CEO",
     description:
-      'Visionario que impulsa la innovación tecnológica, líder del equipo y guía el crecimiento de la compañía.',
-    image: '/home/IMAGEN-CEO.svg',
+      "Visionario que impulsa la innovación tecnológica, líder del equipo y guía el crecimiento de la compañía.",
+    image: "/home/IMAGEN-CEO.svg",
+    linkedinUrl:'https://www.linkedin.com/in/armando-ortiz-de-montellano-21b87b248/'
   },
   {
-    name: 'ARMANDO ORTIZ DE MONTELLANO MURGIA',
-    role: 'CIEO',
+    name: "Armando O. Junior",
+    role: "CIEO",
     description:
-      'Enfocado en transformación digital y capacidad para liderar crecimiento sostenible.',
-    image: '/home/IMAGEN-CIEO.svg',
+      "Enfocado en transformación digital y capacidad para liderar crecimiento sostenible.",
+    image: "/home/IMAGEN-CIEO.svg",
+    linkedinUrl:"https://www.linkedin.com/in/armando-ortiz-de-montellano-7682111a1/"
   },
   {
-    name: 'Alicia O',
-    role: 'CFO',
+    name: "Alicia O",
+    role: "CFO",
     description:
-      'Estratégico que optimiza la salud financiera, impulsa la rentabilidad y respalda el crecimiento sostenible de compañia.',
-    image: '/home/IMAGEN-CIEO.svg',
+      "Estratégico que optimiza la salud financiera, impulsa la rentabilidad y respalda el crecimiento sostenible de compañía.",
+    image: "/home/FOTO-PERFIL-LICY.svg",
+    linkedinUrl:"https://www.linkedin.com/in/licy-ortiz-de-montellano-63747556/"
   },
   {
-    name: 'Alberto O',
-    role: 'CDO',
+    name: "Alberto O",
+    role: "CDO",
     description:
-      'Responsable de impulsar la innovación, supervisar el desarrollo de productos y acelerar el crecimiento.',
-    image: '/home/IMAGEN-CIEO.svg',
+      "Responsable de impulsar la innovación, supervisar el desarrollo de productos y acelerar el crecimiento.",
+    image: "/home/FOTO-PERFIL-ALBERTO.svg",
+    linkedinUrl:"https://www.linkedin.com/in/alberto-ortiz-de-montellano-murgu%C3%ADa-04baa7224/"
   },
 ];
 
 const TeamCarousel: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(1);
-  const [showCarousel, setShowCarousel] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const cardWidth = 280; // ancho estimado por tarjeta (incluye gap)
-      const availableWidth = window.innerWidth;
-
-      const possibleCards = Math.floor(availableWidth / cardWidth);
-
-      if (possibleCards >= teamData.length) {
-        setShowCarousel(false);
-        setCardsPerView(teamData.length);
-        setCurrentIndex(0);
-      } else {
-        setShowCarousel(true);
-        setCardsPerView(possibleCards || 1);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Permite llegar hasta el último artículo aunque no llene la vista
-  const maxIndex = Math.max(0, teamData.length - cardsPerView);
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => Math.max(prev - 1, 0));
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
-  };
-
-  const [isVerySmall, setIsVerySmall] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsVerySmall(window.innerWidth < 500);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return (
-    <div className="w-full overflow-hidden relative">
-      {/* Flechas solo si hay carousel */}
-      {showCarousel && currentIndex > 0 && (
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-2 z-10 bg-white/30 hover:bg-white/50 rounded-full p-2"
-        >
-          <FaArrowLeft className="text-white" size={20} />
-        </button>
-      )}
-      {showCarousel && currentIndex < maxIndex && (
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-2 z-10 bg-white/30 hover:bg-white/50 rounded-full p-2"
-        >
-          <FaArrowRight className="text-white" size={20} />
-        </button>
-      )}
-      
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(4); // Estado para controlar el número de slides
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: slidesToShow, 
+    slidesToScroll: 1,
+    beforeChange: (_: number, next: number) => setActiveSlide(next),
+    customPaging: (i:number) => (
       <div
-        className="flex transition-transform duration-500 ease-in-out gap-5"
         style={{
-          transform: `translateX(-${currentIndex * (100 / cardsPerView +(isVerySmall ? 0 : 0))}%)`,
+          width: "12px",
+          height: "12px",
+          borderRadius: "50%",
+          background: i === activeSlide ? "gray" : "white",
         }}
-      >
+      />
+    ),
+    arrows:true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1280, // < 1280px
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024, // < 1024px
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 700, // < 7200px
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  };
+
+  const handleResize = () => {
+    if (window.innerWidth <= 700) {
+      setSlidesToShow(1);
+    } else if (window.innerWidth <= 1024) {
+      setSlidesToShow(2);
+    } else if (window.innerWidth <= 1280) {
+      setSlidesToShow(3);
+    } else {
+      setSlidesToShow(4);
+    }
+  };
+
+  useEffect(() => {
+    // Establece el número inicial de slides al montar el componente
+    handleResize();
+    
+    // Agrega el "oyente" de eventos para redimensionar la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el "oyente" al desmontar el componente para evitar fugas de memoria
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  return (
+    
+      <Slider {...settings}>
         {teamData.map((member, idx) => (
-          <div
-            key={idx}
-            className="flex-shrink-0"
-            style={{ width: `${100 / cardsPerView -3}%` }}
-          >
+          <div key={idx} className="px-3">
             <div className="rounded-2xl pb-4 text-white">
               <div className="rounded-2xl overflow-hidden">
                 <img
@@ -129,7 +131,7 @@ const TeamCarousel: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col gap-4 pt-4 pb-6">
-                <h3 className="font-bold text-3xl md:text-lg uppercase">
+                <h3 className="font-bold text-base md:text-lg uppercase">
                   {member.name}
                 </h3>
                 <div>
@@ -137,7 +139,7 @@ const TeamCarousel: React.FC = () => {
                     <h4 className="text-2xl font-extrabold text-secondary">
                       {member.role}
                     </h4>
-                    <FaLinkedin size={24} className="text-white" />
+                    <Link to={member.linkedinUrl} ><FaLinkedin size={24} className="text-white" /></Link>
                   </div>
                   <p className="text-base md:text-sm text-white/80">
                     {member.description}
@@ -147,27 +149,11 @@ const TeamCarousel: React.FC = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Bullets solo si hay carousel */}
-      {showCarousel && (
-        <div className="flex justify-center mt-4 gap-2">
-          {Array.from({ length: maxIndex + 1 }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-4 h-4 rounded-full ${
-                index === currentIndex ? 'bg-white' : 'bg-white/50'
-              }`}
-            />
-          ))}
-        </div>
-      )}
-    </div>
+      </Slider>
+    
   );
 };
 
+
 export default TeamCarousel;
-
-
 
