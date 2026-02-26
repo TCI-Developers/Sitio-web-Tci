@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
           <Link to="/#servicios" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Servicios</Link>
           <Link to="/#clientes" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Nuestros Clientes</Link>
           <Link to="/#nosotros" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Acerca de Nosotros</Link>
-          <Link to="/" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Acceso Clientes</Link>
+          <Link to="https://aortizdemontellanoarevalo.quickbase.com/db/main?a=signin&_c=ykd6at" onClick={closeMenu} className="block p-4 hover:bg-blue-200/55 cursor-pointer">Acceso Clientes</Link>
         </div>
       </header>
 
